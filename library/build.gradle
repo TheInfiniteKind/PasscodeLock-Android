@@ -46,6 +46,20 @@ android {
             assets.srcDirs = ['assets']
         }
     }
+
+  signingConfigs {
+    release
+    upload
+  }
+
+  buildTypes {
+    release {
+      signingConfig signingConfigs.release
+    }
+    upload {
+      signingConfig signingConfigs.upload
+    }
+  }
 }
 
 android.buildTypes.all { buildType ->
