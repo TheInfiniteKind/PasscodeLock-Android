@@ -20,17 +20,18 @@ repositories {
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.3.0'
-    implementation 'androidx.preference:preference:1.1.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.preference:preference:1.2.0'
 }
 
 android {
+  namespace 'org.wordpress.passcodelock'
     publishNonDefault true
-    compileSdkVersion 30
+    compileSdkVersion 33
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 30
+        targetSdkVersion 33
         versionCode 4
         versionName "2.0.2"
     }
@@ -59,6 +60,10 @@ android {
     upload {
       signingConfig signingConfigs.upload
     }
+  }
+  buildFeatures {
+    renderScript true
+    aidl true
   }
 }
 

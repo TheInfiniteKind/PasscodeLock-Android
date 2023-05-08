@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.wordpress.passcodelock" >
+    xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <uses-permission
-        android:name="android.permission.USE_FINGERPRINT" />
+        android:name="android.permission.USE_BIOMETRIC" />
 
 <!-- Define the following activities in your project 
     <activity
